@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+NSString * const idConnToMain = @"idConnToMain";
+
 @interface ViewController ()
 
 @end
@@ -16,12 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self configureNavigationBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configureNavigationBar {
+    UIBarButtonItem *backBBI = [[UIBarButtonItem alloc] init];
+    backBBI.title = NSLocalizedString(@"back", @"Back");
+    self.navigationItem.backBarButtonItem = backBBI;
 }
 
 @end

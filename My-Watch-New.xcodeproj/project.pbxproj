@@ -12,8 +12,15 @@
 		08FCA27E1B550109003D9E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA27D1B550109003D9E15 /* ViewController.m */; };
 		08FCA2811B550109003D9E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCA27F1B550109003D9E15 /* Main.storyboard */; };
 		08FCA2831B550109003D9E15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FCA2821B550109003D9E15 /* Images.xcassets */; };
-		08FCA2861B550109003D9E15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08FCA2841B550109003D9E15 /* LaunchScreen.xib */; };
 		08FCA2921B550109003D9E15 /* My_Watch_NewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2911B550109003D9E15 /* My_Watch_NewTests.m */; };
+		08FCA29D1B5501CB003D9E15 /* WMBaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA29C1B5501CB003D9E15 /* WMBaseNC.m */; };
+		08FCA2A01B55032A003D9E15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FCA2A21B55032A003D9E15 /* InfoPlist.strings */; };
+		08FCA2A71B550597003D9E15 /* WMBaseTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2A61B550597003D9E15 /* WMBaseTBC.m */; };
+		08FCA2AA1B5505C7003D9E15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FCA2AC1B5505C7003D9E15 /* Localizable.strings */; };
+		08FCA2B21B55140D003D9E15 /* WMPedoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2B11B55140D003D9E15 /* WMPedoVC.m */; };
+		08FCA2B51B55141B003D9E15 /* WMSleepVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2B41B55141B003D9E15 /* WMSleepVC.m */; };
+		08FCA2B81B55142B003D9E15 /* WMHeartRateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2B71B55142B003D9E15 /* WMHeartRateVC.m */; };
+		08FCA2BB1B55143C003D9E15 /* WMMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2BA1B55143C003D9E15 /* WMMoreVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +43,25 @@
 		08FCA27D1B550109003D9E15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		08FCA2801B550109003D9E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08FCA2821B550109003D9E15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		08FCA2851B550109003D9E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		08FCA28B1B550109003D9E15 /* My-Watch-NewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-Watch-NewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCA2901B550109003D9E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08FCA2911B550109003D9E15 /* My_Watch_NewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Watch_NewTests.m; sourceTree = "<group>"; };
+		08FCA29B1B5501CB003D9E15 /* WMBaseNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBaseNC.h; sourceTree = "<group>"; };
+		08FCA29C1B5501CB003D9E15 /* WMBaseNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBaseNC.m; sourceTree = "<group>"; };
+		08FCA2A11B55032A003D9E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08FCA2A31B550337003D9E15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		08FCA2A51B550597003D9E15 /* WMBaseTBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBaseTBC.h; sourceTree = "<group>"; };
+		08FCA2A61B550597003D9E15 /* WMBaseTBC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBaseTBC.m; sourceTree = "<group>"; };
+		08FCA2AB1B5505C7003D9E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		08FCA2AD1B5505C8003D9E15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		08FCA2B01B55140D003D9E15 /* WMPedoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPedoVC.h; sourceTree = "<group>"; };
+		08FCA2B11B55140D003D9E15 /* WMPedoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPedoVC.m; sourceTree = "<group>"; };
+		08FCA2B31B55141B003D9E15 /* WMSleepVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSleepVC.h; sourceTree = "<group>"; };
+		08FCA2B41B55141B003D9E15 /* WMSleepVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSleepVC.m; sourceTree = "<group>"; };
+		08FCA2B61B55142B003D9E15 /* WMHeartRateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHeartRateVC.h; sourceTree = "<group>"; };
+		08FCA2B71B55142B003D9E15 /* WMHeartRateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHeartRateVC.m; sourceTree = "<group>"; };
+		08FCA2B91B55143C003D9E15 /* WMMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMoreVC.h; sourceTree = "<group>"; };
+		08FCA2BA1B55143C003D9E15 /* WMMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMoreVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +103,11 @@
 		08FCA2741B550109003D9E15 /* My-Watch-New */ = {
 			isa = PBXGroup;
 			children = (
+				08FCA2A41B5503A5003D9E15 /* VC */,
 				08FCA2791B550109003D9E15 /* AppDelegate.h */,
 				08FCA27A1B550109003D9E15 /* AppDelegate.m */,
-				08FCA27C1B550109003D9E15 /* ViewController.h */,
-				08FCA27D1B550109003D9E15 /* ViewController.m */,
 				08FCA27F1B550109003D9E15 /* Main.storyboard */,
 				08FCA2821B550109003D9E15 /* Images.xcassets */,
-				08FCA2841B550109003D9E15 /* LaunchScreen.xib */,
 				08FCA2751B550109003D9E15 /* Supporting Files */,
 			);
 			path = "My-Watch-New";
@@ -98,6 +118,8 @@
 			children = (
 				08FCA2761B550109003D9E15 /* Info.plist */,
 				08FCA2771B550109003D9E15 /* main.m */,
+				08FCA2A21B55032A003D9E15 /* InfoPlist.strings */,
+				08FCA2AC1B5505C7003D9E15 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +139,27 @@
 				08FCA2901B550109003D9E15 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08FCA2A41B5503A5003D9E15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				08FCA27C1B550109003D9E15 /* ViewController.h */,
+				08FCA27D1B550109003D9E15 /* ViewController.m */,
+				08FCA2B01B55140D003D9E15 /* WMPedoVC.h */,
+				08FCA2B11B55140D003D9E15 /* WMPedoVC.m */,
+				08FCA2B31B55141B003D9E15 /* WMSleepVC.h */,
+				08FCA2B41B55141B003D9E15 /* WMSleepVC.m */,
+				08FCA2B61B55142B003D9E15 /* WMHeartRateVC.h */,
+				08FCA2B71B55142B003D9E15 /* WMHeartRateVC.m */,
+				08FCA2B91B55143C003D9E15 /* WMMoreVC.h */,
+				08FCA2BA1B55143C003D9E15 /* WMMoreVC.m */,
+				08FCA29B1B5501CB003D9E15 /* WMBaseNC.h */,
+				08FCA29C1B5501CB003D9E15 /* WMBaseNC.m */,
+				08FCA2A51B550597003D9E15 /* WMBaseTBC.h */,
+				08FCA2A61B550597003D9E15 /* WMBaseTBC.m */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +225,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 08FCA2691B550109003D9E15;
 			productRefGroup = 08FCA2731B550109003D9E15 /* Products */;
@@ -200,7 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08FCA2811B550109003D9E15 /* Main.storyboard in Resources */,
-				08FCA2861B550109003D9E15 /* LaunchScreen.xib in Resources */,
+				08FCA2AA1B5505C7003D9E15 /* Localizable.strings in Resources */,
+				08FCA2A01B55032A003D9E15 /* InfoPlist.strings in Resources */,
 				08FCA2831B550109003D9E15 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +265,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				08FCA27E1B550109003D9E15 /* ViewController.m in Sources */,
+				08FCA29D1B5501CB003D9E15 /* WMBaseNC.m in Sources */,
+				08FCA2B51B55141B003D9E15 /* WMSleepVC.m in Sources */,
+				08FCA2B21B55140D003D9E15 /* WMPedoVC.m in Sources */,
 				08FCA27B1B550109003D9E15 /* AppDelegate.m in Sources */,
 				08FCA2781B550109003D9E15 /* main.m in Sources */,
+				08FCA2A71B550597003D9E15 /* WMBaseTBC.m in Sources */,
+				08FCA2B81B55142B003D9E15 /* WMHeartRateVC.m in Sources */,
+				08FCA2BB1B55143C003D9E15 /* WMMoreVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +303,22 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		08FCA2841B550109003D9E15 /* LaunchScreen.xib */ = {
+		08FCA2A21B55032A003D9E15 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				08FCA2851B550109003D9E15 /* Base */,
+				08FCA2A11B55032A003D9E15 /* Base */,
+				08FCA2A31B550337003D9E15 /* zh-Hans */,
 			);
-			name = LaunchScreen.xib;
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08FCA2AC1B5505C7003D9E15 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08FCA2AB1B5505C7003D9E15 /* Base */,
+				08FCA2AD1B5505C8003D9E15 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +408,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "My-Watch-New/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +420,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "My-Watch-New/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
