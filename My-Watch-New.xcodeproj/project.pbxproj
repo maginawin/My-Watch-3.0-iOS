@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08BC1D281B560193005D5960 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D211B560193005D5960 /* CameraViewController.m */; };
+		08BC1D291B560193005D5960 /* FKRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D231B560193005D5960 /* FKRecorder.m */; };
+		08BC1D2A1B560193005D5960 /* FKRecordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D251B560193005D5960 /* FKRecordUtils.m */; };
+		08BC1D2B1B560193005D5960 /* WWDRecoredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D271B560193005D5960 /* WWDRecoredManager.m */; };
 		08FCA2781B550109003D9E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2771B550109003D9E15 /* main.m */; };
 		08FCA27B1B550109003D9E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA27A1B550109003D9E15 /* AppDelegate.m */; };
 		08FCA27E1B550109003D9E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA27D1B550109003D9E15 /* ViewController.m */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08BC1D201B560193005D5960 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		08BC1D211B560193005D5960 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		08BC1D221B560193005D5960 /* FKRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKRecorder.h; sourceTree = "<group>"; };
+		08BC1D231B560193005D5960 /* FKRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKRecorder.m; sourceTree = "<group>"; };
+		08BC1D241B560193005D5960 /* FKRecordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKRecordUtils.h; sourceTree = "<group>"; };
+		08BC1D251B560193005D5960 /* FKRecordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKRecordUtils.m; sourceTree = "<group>"; };
+		08BC1D261B560193005D5960 /* WWDRecoredManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWDRecoredManager.h; sourceTree = "<group>"; };
+		08BC1D271B560193005D5960 /* WWDRecoredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWDRecoredManager.m; sourceTree = "<group>"; };
 		08FCA2721B550109003D9E15 /* My-Watch-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Watch-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCA2761B550109003D9E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08FCA2771B550109003D9E15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +94,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08BC1D1F1B560186005D5960 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				08BC1D201B560193005D5960 /* CameraViewController.h */,
+				08BC1D211B560193005D5960 /* CameraViewController.m */,
+				08BC1D221B560193005D5960 /* FKRecorder.h */,
+				08BC1D231B560193005D5960 /* FKRecorder.m */,
+				08BC1D241B560193005D5960 /* FKRecordUtils.h */,
+				08BC1D251B560193005D5960 /* FKRecordUtils.m */,
+				08BC1D261B560193005D5960 /* WWDRecoredManager.h */,
+				08BC1D271B560193005D5960 /* WWDRecoredManager.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
 		08FCA2691B550109003D9E15 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +171,7 @@
 		08FCA2A41B5503A5003D9E15 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				08BC1D1F1B560186005D5960 /* Camera */,
 				08FCA27C1B550109003D9E15 /* ViewController.h */,
 				08FCA27D1B550109003D9E15 /* ViewController.m */,
 				08FCA2B01B55140D003D9E15 /* WMPedoVC.h */,
@@ -269,10 +297,14 @@
 				08FCA2B51B55141B003D9E15 /* WMSleepVC.m in Sources */,
 				08FCA2B21B55140D003D9E15 /* WMPedoVC.m in Sources */,
 				08FCA27B1B550109003D9E15 /* AppDelegate.m in Sources */,
+				08BC1D281B560193005D5960 /* CameraViewController.m in Sources */,
 				08FCA2781B550109003D9E15 /* main.m in Sources */,
+				08BC1D2A1B560193005D5960 /* FKRecordUtils.m in Sources */,
 				08FCA2A71B550597003D9E15 /* WMBaseTBC.m in Sources */,
 				08FCA2B81B55142B003D9E15 /* WMHeartRateVC.m in Sources */,
 				08FCA2BB1B55143C003D9E15 /* WMMoreVC.m in Sources */,
+				08BC1D2B1B560193005D5960 /* WWDRecoredManager.m in Sources */,
+				08BC1D291B560193005D5960 /* FKRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +513,7 @@
 				08FCA2971B550109003D9E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08FCA2981B550109003D9E15 /* Build configuration list for PBXNativeTarget "My-Watch-NewTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +522,7 @@
 				08FCA29A1B550109003D9E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

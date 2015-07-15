@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *pedoProgressView;
 @property (strong, nonatomic) CAShapeLayer *pedoProgressMaskLayer;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @end
 
@@ -21,6 +22,7 @@
     [super viewDidLoad];
 
     [self configurePedoProgressView];
+    [self configureBottomView];
     
     [self updatePedoProgressCurrent:0.7f];
 }
@@ -51,6 +53,23 @@
     _pedoProgressMaskLayer.strokeEnd = 0.f;
     
     _pedoProgressView.layer.mask = _pedoProgressMaskLayer;
+}
+
+- (void)configureBottomView {
+    UIBezierPath *linePath = [[UIBezierPath alloc] init];
+    [linePath moveToPoint:CGPointMake(0, 96.f)];
+    [linePath addLineToPoint:CGPointMake(220.f, 96.f)];
+    [linePath moveToPoint:CGPointMake(106.f, 8.f)];
+    [linePath addLineToPoint:CGPointMake(106.f, 184.f)];
+    
+    CAShapeLayer *lineLayer = [CAShapeLayer layer];
+    lineLayer.path = linePath.CGPath;
+    lineLayer.lineWidth = .5f;
+    lineLayer.strokeColor = [UIColor whiteColor].CGColor;
+    lineLayer.fillColor = [UIColor clearColor].CGColor;
+    lineLayer.opacity = .2f;
+    
+    [_bottomView.layer addSublayer:lineLayer];
 }
 
 @end
