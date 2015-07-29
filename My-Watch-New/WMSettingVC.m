@@ -8,22 +8,24 @@
 
 #import "WMSettingVC.h"
 
+// Key for titles
+NSString *const kCellUserInfo = @"kCellUserInfo";
+NSString *const kCellStepTarget = @"kCellStepTarget";
+NSString *const kCellSleep = @"kCellSleep";
+NSString *const kCellAntiLost = @"kCellAntiLost";
+NSString *const kCellHelp = @"kCellHelp";
+NSString *const kCellBinding = @"kCellBinding";
+
+// Id for segues
+NSString * const kSetToUserInfo = @"idSetToUserInfo";
+
 @interface WMSettingVC () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *mTableView;
-@property (strong, nonatomic) NSArray *cellTitles;
-@property (strong, nonatomic) NSDictionary *titles;
+@property (weak, nonatomic) IBOutlet UITableView *mTableView; // Ble table view
+@property (strong, nonatomic) NSDictionary *titles; // Cell titles
 
 @end
 
 @implementation WMSettingVC
-
-// Key for titles
-NSString *kCellUserInfo = @"kCellUserInfo";
-NSString *kCellStepTarget = @"kCellStepTarget";
-NSString *kCellSleep = @"kCellSleep";
-NSString *kCellAntiLost = @"kCellAntiLost";
-NSString *kCellHelp = @"kCellHelp";
-NSString *kCellBinding = @"kCellBinding";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +38,49 @@ NSString *kCellBinding = @"kCellBinding";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    switch (indexPath.section) {
+        case 0: {
+            switch (indexPath.row) {
+                case 0: {
+                    // User info
+                    [self performSegueWithIdentifier:kSetToUserInfo sender:self];
+                    
+                    break;
+                }
+                case 1: {
+                    // Binding device
+                    
+                    break;
+                }
+            }
+            break;
+        }
+        case 1: {
+            switch (indexPath.row) {
+                case 0: {
+                    // Step target
+                    
+                    break;
+                }
+                case 1: {
+                    // Sleep
+                    
+                    break;
+                }
+            }
+            break;
+        }
+        case 2: {
+            switch (indexPath.row) {
+                case 0: {
+                    // Help
+                    
+                    break;
+                }
+            }
+            break;
+        }
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -177,8 +221,6 @@ NSString *kCellBinding = @"kCellBinding";
 
 - (void)configureViews {
     // 配置基础数据
-    _cellTitles = @[NSLocalizedString(@"cellUserInfo", @""), NSLocalizedString(@"cellStepTarget", @""), NSLocalizedString(@"cellSleep", @""), NSLocalizedString(@"cellAntiLost", @""), NSLocalizedString(@"cellHelp", @"")];
-    
     _titles = @{kCellUserInfo : NSLocalizedString(@"cellUserInfo", @""), kCellStepTarget : NSLocalizedString(@"cellStepTarget", @""), kCellSleep : NSLocalizedString(@"cellSleep", @""), kCellAntiLost : NSLocalizedString(@"cellAntiLost", @""), kCellHelp : NSLocalizedString(@"cellHelp", @""), kCellBinding : NSLocalizedString(@"cellBindingDevice", @"")};
     
     // 配置蓝牙表格
