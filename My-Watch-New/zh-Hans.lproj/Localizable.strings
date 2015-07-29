@@ -10,3 +10,9 @@
 "peripheralsNearby" = " 附近的设备";
 
 "peripheralScanning" = "正在查找设备 ...";
+
+"cellUserInfo" = "用户信息";
+"cellStepTarget" = "计步目标";
+"cellSleep" = "睡眠";
+"cellAntiLost" = "防丢";
+"cellHelp" = "帮助";

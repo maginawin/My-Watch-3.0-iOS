@@ -10,3 +10,9 @@
 "peripheralsNearby" = " Peripherals Nearby";
 
 "peripheralScanning" = "Peripheral scanning ...";
+
+"cellUserInfo" = "User information";
+"cellStepTarget" = "Step target";
+"cellSleep" = "Sleep";
+"cellAntiLost" = "Anti lost";
+"cellHelp" = "Help";
