@@ -11,6 +11,7 @@
 		08BC1D291B560193005D5960 /* FKRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D231B560193005D5960 /* FKRecorder.m */; };
 		08BC1D2A1B560193005D5960 /* FKRecordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D251B560193005D5960 /* FKRecordUtils.m */; };
 		08BC1D2B1B560193005D5960 /* WWDRecoredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC1D271B560193005D5960 /* WWDRecoredManager.m */; };
+		08CFD9DF1B573A9000D63EEF /* WMSleepDataBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CFD9DE1B573A9000D63EEF /* WMSleepDataBar.m */; };
 		08FCA2781B550109003D9E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA2771B550109003D9E15 /* main.m */; };
 		08FCA27B1B550109003D9E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA27A1B550109003D9E15 /* AppDelegate.m */; };
 		08FCA27E1B550109003D9E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCA27D1B550109003D9E15 /* ViewController.m */; };
@@ -46,6 +47,8 @@
 		08BC1D251B560193005D5960 /* FKRecordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKRecordUtils.m; sourceTree = "<group>"; };
 		08BC1D261B560193005D5960 /* WWDRecoredManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWDRecoredManager.h; sourceTree = "<group>"; };
 		08BC1D271B560193005D5960 /* WWDRecoredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWDRecoredManager.m; sourceTree = "<group>"; };
+		08CFD9DD1B573A9000D63EEF /* WMSleepDataBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSleepDataBar.h; sourceTree = "<group>"; };
+		08CFD9DE1B573A9000D63EEF /* WMSleepDataBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSleepDataBar.m; sourceTree = "<group>"; };
 		08FCA2721B550109003D9E15 /* My-Watch-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Watch-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCA2761B550109003D9E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08FCA2771B550109003D9E15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 			name = Camera;
 			sourceTree = "<group>";
 		};
+		08CFD9DC1B573A7F00D63EEF /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				08CFD9DD1B573A9000D63EEF /* WMSleepDataBar.h */,
+				08CFD9DE1B573A9000D63EEF /* WMSleepDataBar.m */,
+			);
+			name = "Custom View";
+			sourceTree = "<group>";
+		};
 		08FCA2691B550109003D9E15 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 		08FCA2741B550109003D9E15 /* My-Watch-New */ = {
 			isa = PBXGroup;
 			children = (
+				08CFD9DC1B573A7F00D63EEF /* Custom View */,
 				08FCA2A41B5503A5003D9E15 /* VC */,
 				08FCA2791B550109003D9E15 /* AppDelegate.h */,
 				08FCA27A1B550109003D9E15 /* AppDelegate.m */,
@@ -293,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08FCA27E1B550109003D9E15 /* ViewController.m in Sources */,
+				08CFD9DF1B573A9000D63EEF /* WMSleepDataBar.m in Sources */,
 				08FCA29D1B5501CB003D9E15 /* WMBaseNC.m in Sources */,
 				08FCA2B51B55141B003D9E15 /* WMSleepVC.m in Sources */,
 				08FCA2B21B55140D003D9E15 /* WMPedoVC.m in Sources */,

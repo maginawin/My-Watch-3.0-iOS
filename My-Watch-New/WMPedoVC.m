@@ -64,10 +64,10 @@
     
     CAShapeLayer *lineLayer = [CAShapeLayer layer];
     lineLayer.path = linePath.CGPath;
-    lineLayer.lineWidth = .5f;
+    lineLayer.lineWidth = 0.5f;
     lineLayer.strokeColor = [UIColor whiteColor].CGColor;
     lineLayer.fillColor = [UIColor clearColor].CGColor;
-    lineLayer.opacity = .2f;
+    lineLayer.opacity = .1f;
     
     [_bottomView.layer addSublayer:lineLayer];
 }

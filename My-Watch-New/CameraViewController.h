@@ -11,9 +11,13 @@
 #import "WWDRecoredManager.h"
 
 @interface CameraViewController : UIViewController
-@property (nonatomic, retain) WWDRecoredManager* recordManager;
-@property (nonatomic, retain) IBOutlet UIView* videoPreviewView;
+@property (nonatomic, strong) WWDRecoredManager* recordManager;
+@property (nonatomic, strong) IBOutlet UIView* videoPreviewView;
 
-- (IBAction)toggleCamera:(id)sender;
-- (IBAction)captureStillImage:(id)sender;
+/** 拍照片 */
+- (void)takePicture;
+
+/** 切换摄像头 */
+- (void)toggleCamera;
+
 @end
