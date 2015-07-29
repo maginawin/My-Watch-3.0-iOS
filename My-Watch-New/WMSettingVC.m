@@ -23,14 +23,21 @@ NSString *kCellStepTarget = @"kCellStepTarget";
 NSString *kCellSleep = @"kCellSleep";
 NSString *kCellAntiLost = @"kCellAntiLost";
 NSString *kCellHelp = @"kCellHelp";
+NSString *kCellBinding = @"kCellBinding";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // 配置数据与基础视图
     [self configureViews];
 }
 
 #pragma mark - Table View 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
@@ -41,7 +48,7 @@ NSString *kCellHelp = @"kCellHelp";
     
     switch (section) {
         case 0: {
-            cellCount = 1;
+            cellCount = 2;
             break;
         }
         case 1: {
@@ -57,9 +64,15 @@ NSString *kCellHelp = @"kCellHelp";
     return cellCount;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 21.f;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    return 21.f;
+//}
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    UIView *header = [[UIView alloc] init];
+//    header.backgroundColor = [UIColor groupTableViewBackgroundColor];
+//    return header;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellIdFromIndexPath:indexPath]];
@@ -71,8 +84,19 @@ NSString *kCellHelp = @"kCellHelp";
     // 给 Cell 的 subview 赋值
     switch (indexPath.section) {
         case 0: {
-            // User info cell
-            cell.textLabel.text = [_titles valueForKey:kCellUserInfo];
+            switch (indexPath.row) {
+                case 0: {
+                    // User info cell
+                    cell.textLabel.text = [_titles valueForKey:kCellUserInfo];
+                    break;
+                }
+                case 1: {
+                    // Binding device cell
+                    cell.textLabel.text = [_titles valueForKey:kCellBinding];
+                    cell.detailTextLabel.text = NSLocalizedString(@"noBinding", @"");
+                    break;
+                }
+            }
             break;
         }
         case 1: {
@@ -114,6 +138,15 @@ NSString *kCellHelp = @"kCellHelp";
     int actualCell = 0;
     
     switch (indexPath.section) {
+        case 0: {
+            switch (indexPath.row) {
+                case 1: {
+                    actualCell = 2;
+                    break;
+                }
+            }
+            break;
+        }
         case 1: {
             switch (indexPath.row) {
                 case 0:
@@ -146,7 +179,7 @@ NSString *kCellHelp = @"kCellHelp";
     // 配置基础数据
     _cellTitles = @[NSLocalizedString(@"cellUserInfo", @""), NSLocalizedString(@"cellStepTarget", @""), NSLocalizedString(@"cellSleep", @""), NSLocalizedString(@"cellAntiLost", @""), NSLocalizedString(@"cellHelp", @"")];
     
-    _titles = @{kCellUserInfo : NSLocalizedString(@"cellUserInfo", @""), kCellStepTarget : NSLocalizedString(@"cellStepTarget", @""), kCellSleep : NSLocalizedString(@"cellSleep", @""), kCellAntiLost : NSLocalizedString(@"cellAntiLost", @""), kCellHelp : NSLocalizedString(@"cellHelp", @"")};
+    _titles = @{kCellUserInfo : NSLocalizedString(@"cellUserInfo", @""), kCellStepTarget : NSLocalizedString(@"cellStepTarget", @""), kCellSleep : NSLocalizedString(@"cellSleep", @""), kCellAntiLost : NSLocalizedString(@"cellAntiLost", @""), kCellHelp : NSLocalizedString(@"cellHelp", @""), kCellBinding : NSLocalizedString(@"cellBindingDevice", @"")};
     
     // 配置蓝牙表格
     _mTableView.delegate = self;

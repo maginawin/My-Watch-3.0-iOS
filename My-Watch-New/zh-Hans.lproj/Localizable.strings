@@ -16,3 +16,6 @@
 "cellSleep" = "睡眠";
 "cellAntiLost" = "防丢";
 "cellHelp" = "帮助";
+"cellBindingDevice" = "绑定设备";
+
+"noBinding" = "没有绑定设备";

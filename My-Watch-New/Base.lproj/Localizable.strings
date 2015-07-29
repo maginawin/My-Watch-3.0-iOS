@@ -16,3 +16,6 @@
 "cellSleep" = "Sleep";
 "cellAntiLost" = "Anti lost";
 "cellHelp" = "Help";
+"cellBindingDevice" = "Binding device";
+
+"noBinding" = "No binding";
