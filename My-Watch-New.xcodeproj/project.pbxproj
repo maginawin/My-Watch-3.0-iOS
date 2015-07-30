@@ -152,13 +152,13 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
-		08E6B89F1B68D1F2003AD61C /* Modul Object */ = {
+		08E6B89F1B68D1F2003AD61C /* Model Object */ = {
 			isa = PBXGroup;
 			children = (
 				08E6B8A01B68D218003AD61C /* WMUserDataObject.h */,
 				08E6B8A11B68D218003AD61C /* WMUserDataObject.m */,
 			);
-			name = "Modul Object";
+			name = "Model Object";
 			sourceTree = "<group>";
 		};
 		08E6B8A31B68D5CA003AD61C /* Setting Sub VC */ = {
@@ -191,7 +191,7 @@
 		08FCA2741B550109003D9E15 /* My-Watch-New */ = {
 			isa = PBXGroup;
 			children = (
-				08E6B89F1B68D1F2003AD61C /* Modul Object */,
+				08E6B89F1B68D1F2003AD61C /* Model Object */,
 				08E6B89B1B6876BB003AD61C /* Category */,
 				08CFD9DC1B573A7F00D63EEF /* Custom View */,
 				08FCA2A41B5503A5003D9E15 /* VC */,

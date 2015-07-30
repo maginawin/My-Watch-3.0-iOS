@@ -19,3 +19,21 @@
 "cellBindingDevice" = "Binding device";
 
 "noBinding" = "No binding";
+
+"stride" = "Stride"; // 步幅
+"height" = "Height";
+"weight" = "Weight";
+"gender" = "Gender";
+"age" = "Age";
+
+"cm" = "cm";
+"inch" = "inch";
+"pound" = "lb";
+"kg" = "kg";
+"female" = "Female";
+"male" = "Male";
+"years" = "years";
+
+"system" = "System";
+"metric" = "Metric";
+"british" = "British";

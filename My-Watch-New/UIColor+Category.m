@@ -11,7 +11,7 @@
 @implementation UIColor (Category)
 
 + (UIColor *)mDeepBlueColorAlpha:(CGFloat)alpha {
-    return [UIColor colorWithRed:42/255.f green:110/255.f blue:116/255.f alpha:alpha];
+    return [UIColor colorWithRed:42/255.f green:110/255.f blue:165/255.f alpha:alpha];
 }
 
 @end

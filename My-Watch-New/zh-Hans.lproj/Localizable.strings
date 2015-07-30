@@ -19,3 +19,21 @@
 "cellBindingDevice" = "绑定设备";
 
 "noBinding" = "没有绑定设备";
+
+"stride" = "步幅"; // 步幅
+"height" = "身高";
+"weight" = "体重";
+"gender" = "性别";
+"age" = "年龄";
+
+"cm" = "厘米";
+"inch" = "英寸";
+"pound" = "磅";
+"kg" = "公斤";
+"female" = "女";
+"male" = "男";
+"years" = "岁";
+
+"system" = "制度";
+"metric" = "公制";
+"british" = "英制";

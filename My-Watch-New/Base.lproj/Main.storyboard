@@ -1021,7 +1021,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-r0-YHM">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-r0-YHM">
                                                     <rect key="frame" x="281" y="11" width="31" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="bIA-xu-NpP"/>
@@ -1051,8 +1051,8 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-TJ-0x9">
                                                     <rect key="frame" x="15" y="11" width="92" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="92" id="7Ea-va-TTM"/>
-                                                        <constraint firstAttribute="height" constant="21" id="hsf-EZ-WXc"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Yzw-X0-bQV"/>
+                                                        <constraint firstAttribute="width" constant="92" id="yT5-dZ-2ID"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1084,7 +1084,7 @@
                                                         <constraint firstAttribute="width" constant="68" id="OWL-i1-Ha5"/>
                                                         <constraint firstAttribute="height" constant="30" id="oei-tV-WJh"/>
                                                     </constraints>
-                                                    <state key="normal" title="◎">
+                                                    <state key="normal" title="◎" backgroundImage="transparence">
                                                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1102,7 +1102,7 @@
                                                         <constraint firstAttribute="width" constant="68" id="dp3-ho-x5E"/>
                                                         <constraint firstAttribute="height" constant="30" id="lv7-dG-abr"/>
                                                     </constraints>
-                                                    <state key="normal" title="◎ ">
+                                                    <state key="normal" title="◎ " backgroundImage="transparence">
                                                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1115,14 +1115,14 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9gZ-TJ-0x9" firstAttribute="leading" secondItem="Xhc-gS-kQf" secondAttribute="leadingMargin" constant="7" id="Inz-1H-a2k"/>
+                                                <constraint firstItem="9gZ-TJ-0x9" firstAttribute="leading" secondItem="Xhc-gS-kQf" secondAttribute="leading" constant="15" id="9zq-Wl-6VS"/>
                                                 <constraint firstAttribute="centerY" secondItem="VCj-cK-tFI" secondAttribute="centerY" id="NLa-2v-TJI"/>
                                                 <constraint firstAttribute="centerY" secondItem="5XE-I6-AC5" secondAttribute="centerY" id="WWb-1W-6XK"/>
                                                 <constraint firstAttribute="trailing" secondItem="VCj-cK-tFI" secondAttribute="trailing" constant="10" id="WrI-gw-mGt"/>
                                                 <constraint firstItem="VCj-cK-tFI" firstAttribute="leading" secondItem="M4K-QF-e0o" secondAttribute="trailing" constant="6" id="YKd-wv-OlA"/>
+                                                <constraint firstAttribute="centerY" secondItem="9gZ-TJ-0x9" secondAttribute="centerY" id="e4r-nc-yEL"/>
                                                 <constraint firstAttribute="trailing" secondItem="5XE-I6-AC5" secondAttribute="trailing" constant="8" id="go8-5Z-LLI"/>
                                                 <constraint firstAttribute="centerY" secondItem="M4K-QF-e0o" secondAttribute="centerY" id="iH1-HY-glm"/>
-                                                <constraint firstAttribute="centerY" secondItem="9gZ-TJ-0x9" secondAttribute="centerY" id="tDa-9E-oCe"/>
                                                 <constraint firstItem="VCj-cK-tFI" firstAttribute="leading" secondItem="qbM-nv-Xcr" secondAttribute="trailing" constant="8" id="uih-i8-OKp"/>
                                                 <constraint firstAttribute="centerY" secondItem="qbM-nv-Xcr" secondAttribute="centerY" id="zPp-rK-atn"/>
                                             </constraints>
@@ -1143,7 +1143,13 @@
                             <constraint firstItem="kWm-Mw-e4V" firstAttribute="top" secondItem="yyQ-uS-vTP" secondAttribute="bottom" id="wKZ-Mu-dlY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="User Information" id="hbi-Wd-xui"/>
+                    <navigationItem key="navigationItem" title="User Information" id="hbi-Wd-xui">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="e90-yh-XCW">
+                            <connections>
+                                <action selector="saveClick:" destination="9ec-sj-o9D" id="abT-A6-aia"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mTableView" destination="kWm-Mw-e4V" id="Iat-Sn-dL8"/>
